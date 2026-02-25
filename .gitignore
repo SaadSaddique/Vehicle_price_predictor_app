@@ -1,13 +1,81 @@
-# Flutter
+# ==================================================
+# FLUTTER / DART
+# ==================================================
+
 .dart_tool/
 .packages
 .pub/
 build/
+.flutter-plugins
+.flutter-plugins-dependencies
+flutter_export_environment.sh
+.generated/
+**/generated_plugin_registrant.dart
 
-# Android
+# ==================================================
+# ENVIRONMENT VARIABLES (VERY IMPORTANT 🔐)
+# ==================================================
+
+.env
+.env.*
+apikey.properties
+secrets.json
+
+# ==================================================
+# ANDROID
+# ==================================================
+
 android/.gradle/
 android/app/build/
+android/local.properties
+android/key.properties
+*.keystore
+*.jks
+*.pem
 
-# iOS
+# Remove signing files
+android/app/upload-keystore.jks
+
+# ==================================================
+# FIREBASE (PUBLIC REPO SAFETY)
+# ==================================================
+
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# ==================================================
+# iOS (if added later)
+# ==================================================
+
 ios/Pods/
 ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+ios/Flutter/Flutter.podspec
+
+# ==================================================
+# IDE / EDITOR FILES
+# ==================================================
+
+.idea/
+.vscode/
+*.iml
+
+# ==================================================
+# OS FILES
+# ==================================================
+
+.DS_Store
+Thumbs.db
+
+# ==================================================
+# LOG FILES
+# ==================================================
+
+*.log
+
+# ==================================================
+# TEST COVERAGE
+# ==================================================
+
+coverage/
